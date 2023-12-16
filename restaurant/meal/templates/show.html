@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="di d-flex flex-wrap g-5 p-5 m-5">
+        {% for i in categories %}
+            <div class="card m-2 p-1" style="width: 20rem; height: 27rem">
+                <img class="card-img-top" src="{{ i.strCategoryThumb }}" alt="image">
+                <div class="card-body">
+                    <h3 class="card-id">{{ i.idCategory }}</h3>
+                    <h3>{{i.strCategory}}</h3>
+                    <p class="card-title">{{ i.strCategoryDescription|truncatewords:10 }}</p>
+
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>

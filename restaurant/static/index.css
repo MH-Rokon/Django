@@ -1,0 +1,23 @@
+
+
+img {
+    height: 650px;
+    width: 700px;
+    border-radius: 100px;
+  }
+  
+  #pa {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: hsl(315, 20%, 96%);
+  }
+  
+
+
+  .home {
+    background-image:url('chicken.jpg');
+     background-size: cover; 
+    
+     background-position: center; 
+ }

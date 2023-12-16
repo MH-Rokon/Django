@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <div class="home d-flex align-items-center justify-content-around text-center" style="height: 100vh;">
+    <div>
+      <p id="pa"> KFC is a global chicken restaurant brand with a rich,<br> 
+        
+        decades-long history of success and innovation. It started <br> 
+
+        with one cook,Colonel Harland Sanders, who created a finger-lickin' <br>
+
+        good recipe more than 75 years ago—a list of 11 secret herbs <br>
+
+        and spices scratched out on the back of his kitchen door.</p>
+    </div>  
+    <div>
+      <img src="{% static 'KFC.jpg' %}" alt="KFC">
+    </div>
+  </div>
+  <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+{% endblock %}
+
