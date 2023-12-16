@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+{% load static %}
+    {% block content %}
+  
+    <div class="di d-flex flex-wrap g-5 p-5 m-5">
+      {% for i in meals %}
+      <div class="card  m-2 p-1" style="width: 20rem; height: 27rem">
+          <img class="card-img-top" src="{{i.strMealThumb}}" alt=" image">
+          <div class="card-body">
+            <h5 class="card-title">{{i.strMeal}}</h5>
+            <p class="card-text">This is the  meal content.<br>Order and enjoy your food </p> 
+          </div>
+        </div>
+        {% endfor %}
+      
+      </div>
+ 
+      {% endblock %}
+      
+      
